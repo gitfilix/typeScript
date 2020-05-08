@@ -5,5 +5,9 @@ filiks notes on ts
 - typescript has no effect on how our code gets executed by the browser or node
 - its acting like a friend / pair-programmer / realtime-error-linter
 
+run ts copiler on node:
+tsc index.ts
+
+--> convert to index.js
 
 
