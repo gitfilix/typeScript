@@ -1,0 +1,9 @@
+filiks notes on ts
+-------------------
+
+- writing ts is the same as js with some 'extra documentation'
+- typescript has no effect on how our code gets executed by the browser or node
+- its acting like a friend / pair-programmer / realtime-error-linter
+
+
+
