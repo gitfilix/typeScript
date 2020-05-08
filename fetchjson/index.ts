@@ -10,6 +10,7 @@ interface Todo {
 }
 
 axios.get(url).then(response => {
+  // reference todo to response.data
   const todo = response.data as Todo
 
   const id = todo.id
