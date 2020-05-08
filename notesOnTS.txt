@@ -11,3 +11,5 @@ tsc index.ts
 --> convert to index.js
 
 
+interface: 
+are used to define the structure of an object.
