@@ -78,3 +78,12 @@ const importantDates: (Date | string)[] = []
 importantDates.push('2030-10-4') // valid 
 importantDates.push(new Date('2043-3-10')) // valid
 importantDates.push(200) // InValid !
+
+
+
+def: Tuples: 
+  Array-like structur where each element represent some property of a record
+  -> order wihtin is crucial!
+  example:
+  [ brown, true, 42 ]
+
