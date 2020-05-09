@@ -93,3 +93,15 @@ def: Tuples:
 
 
 void: function returns nothing!
+
+
+
+Type definition files:
+
+  - between TS Code and 3rd party libraries. 
+  - kind of an adapter -/ layer
+  - often available on npm as special / aditional package ("@types/faker": "^4.1.11",)
+
+install like that
+npm install @types/faker
+
