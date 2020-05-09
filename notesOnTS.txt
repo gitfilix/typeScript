@@ -71,3 +71,10 @@ describe what parameter-types go in and how the return value is expected:
 
 Type ANY: TS has no idea what type it actually is. 
 
+
+// flexible Types: this array can contain date-types and /or strings:
+
+const importantDates: (Date | string)[] = []
+importantDates.push('2030-10-4') // valid 
+importantDates.push(new Date('2043-3-10')) // valid
+importantDates.push(200) // InValid !
