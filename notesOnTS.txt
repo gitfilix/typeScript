@@ -44,9 +44,28 @@ objects
 
 
 
-def:  Type Annotation:
+def:  Type ANNOTATION:
   Code we add to tell Typescript what type of value a variable will refer to
 
-def: Type inference:
+def: Type INFERENCE:
 Typescript tries to (automaticly) figure out what [THE HELL] type of value a variable refers to. 
+
+  -> if decalaration and initaialisazion are on the same line, TS will figure out the type for us.
+
+  -> we use type INFERENCE ? Always!  (do not declare the obvious)
+
+  -> when to use Type ANNOTATION ? 
+      - when we declare a var and initialize later
+      - when we want a var forcing tho have a type
+      - when a function returns 'any' and we want to clarify the value
+      
+
+function ANNOTATION:
+describe what parameter-types go in and how the return value is expected:
+
+  const logNumber: (i: number) => void = (i: number ) => {
+    console.log('i:', i)
+  }
+
+
 
