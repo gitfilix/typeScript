@@ -1,0 +1,4 @@
+start this app with parcel
+
+cmd: 
+parcel index.html
