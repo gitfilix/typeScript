@@ -38,6 +38,38 @@ const logNumber: (i: number) => void = (i: number ) => {
 }
 
 
+// when to use annotations ?
+
+// 1. functions theat return 'any' type
+// ts would assume json has type 'any'
+const json = '{"x": 10, "y": 20}';
+// here we specify whats in
+const coordinates: { x: number; y: number } = JSON.parse(json)
+console.log(coordinates);
+
+// 2. when we declare a variable on one line and initialize it later
+let words = ['red', 'blue', 'green', 'purple']
+// foundWord is declared but not initialized here
+let foundWord: boolean
+
+for ( let i = 0; i < words.length; i++ ) {
+  if (words[i] === 'green') {
+    foundWord = true
+  }
+}
+
+// 3. varialbles whose type cannot be inferred correctly
+let numbers = [-10, -5, 12, 44]
+let numberAboveZero: boolean | number = false
+
+for (let i = 0; i < numbers.length; i++ ) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
+
+
+
 
 
 

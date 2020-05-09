@@ -58,7 +58,7 @@ Typescript tries to (automaticly) figure out what [THE HELL] type of value a var
       - when we declare a var and initialize later
       - when we want a var forcing tho have a type
       - when a function returns 'any' and we want to clarify the value
-      
+
 
 function ANNOTATION:
 describe what parameter-types go in and how the return value is expected:
@@ -68,4 +68,6 @@ describe what parameter-types go in and how the return value is expected:
   }
 
 
+
+Type ANY: TS has no idea what type it actually is. 
 
