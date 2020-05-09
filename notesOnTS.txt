@@ -11,13 +11,16 @@ tsc index.ts
 --> convert to index.js
 
 
-interface: 
+def: Interface: 
+  creates a new type, describing teh property names anf value types of an object
+
 - are used to define the structure of an object. 
 - defines a new Type!
 
 
+
 Type:
-          example
+          example:
 string:   "", '', 'Monday'
 number:   0.02, -40,
 boolean   true, false
@@ -87,3 +90,6 @@ def: Tuples:
   example:
   [ brown, true, 42 ]
 
+
+
+void: function returns nothing!
