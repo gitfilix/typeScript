@@ -23,7 +23,10 @@ def: Interface:
 // to call printVehicle you must pass an object that meets the specification defined in a Interface (Vehicle)
 const printVehicle = (vehicle: Vehicle): void => { }
 
-
+- general Strategy for re-usable code in TS: 
+  -> create functions that accept arguments that are typed with interfaces!
+  -> objects classes can decide to 'implement' a given interface to work with a function 
+  (think as interface work as a gatekeeper)
 
 
 Type:
