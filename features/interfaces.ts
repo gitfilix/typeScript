@@ -1,11 +1,16 @@
-// type interface Vehicle - very generic
+//
+interface Reportable {
+  summary(): string; // summary is a function that returns a string
+}
 
+// type interface Vehicle - very generic
 interface Vehicle {
   name: string;
   year: Date;
   broken: boolean;
   summary(): string; // summary is a function that returns a string
 }
+
 
 const oldCivic = {
   name: 'civic',
@@ -16,13 +21,21 @@ const oldCivic = {
   }
 }
 
-// to call printVehicle you must pass an object that meets the specification defined in a Interface
-const printVehicle = (vehicle: Vehicle): void => {
-  console.log(`Name: ${vehicle.name}`);
-  console.log(`Year: ${vehicle.year}`);
-  console.log(`Broken?: ${vehicle.broken}`);
-  console.log(vehicle.summary());
+const drink = {
+  color: 'pinkgreen',
+  carbonated: true,
+  sugar: 34,
+  summary(): string {
+    return `My drink has this fance ${this.color} color`
+  }
+}
+
+
+// to call printSummary you must pass an object that meets the specification defined in a Interface
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
   
 }
 
-printVehicle(oldCivic)
+printSummary(oldCivic)
+printSummary(drink)

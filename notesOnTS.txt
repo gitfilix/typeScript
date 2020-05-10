@@ -17,7 +17,7 @@ def: Interface:
 
 - are used to define the structure of an object. 
 - defines a new Type!
-
+- nice SideEffect: it encourages us to write more generic reusable code / functions in TS
 
 
 // to call printVehicle you must pass an object that meets the specification defined in a Interface (Vehicle)
