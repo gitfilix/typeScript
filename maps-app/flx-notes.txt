@@ -2,3 +2,13 @@ start this app with parcel
 
 cmd: 
 parcel index.html
+
+
+api key from gookle acount
+
+https://console.developers.google.com/apis/credentials?organizationId=0&project=typescriptmessarround
+api key:
+AIzaSyAqlTKlXX3dIVym9_7FAHW1cz5K4bWFS1M
+
+url:
+https://maps.googleapis.com/maps/api/js?key=AIzaSyAqlTKlXX3dIVym9_7FAHW1cz5K4bWFS1M
