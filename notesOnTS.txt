@@ -12,10 +12,17 @@ tsc index.ts
 
 
 def: Interface: 
+----------------
   creates a new type, describing teh property names anf value types of an object
 
 - are used to define the structure of an object. 
 - defines a new Type!
+
+
+
+// to call printVehicle you must pass an object that meets the specification defined in a Interface (Vehicle)
+const printVehicle = (vehicle: Vehicle): void => { }
+
 
 
 
