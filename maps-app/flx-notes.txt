@@ -12,3 +12,10 @@ AIzaSyAqlTKlXX3dIVym9_7FAHW1cz5K4bWFS1M
 
 url:
 https://maps.googleapis.com/maps/api/js?key=AIzaSyAqlTKlXX3dIVym9_7FAHW1cz5K4bWFS1M
+
+
+// private property: it is not possible to oversteer it. 
+export class CustomMap {
+  private googleMap: google.maps.Map;
+
+
