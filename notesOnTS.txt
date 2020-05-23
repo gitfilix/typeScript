@@ -123,3 +123,9 @@ keyword implements:
 // make sure this interface is used and gets implement correctly
 export class Company implements Mappable {}
 
+// generates an ts.config file
+tsc --init
+
+// start a whatcher
+tsc -w 
+
