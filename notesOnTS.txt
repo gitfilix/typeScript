@@ -13,7 +13,7 @@ tsc index.ts
 
 def: Interface: 
 ----------------
-  creates a new type, describing teh property names anf value types of an object
+  creates a new type, describing the property names anf value types of an object
 
 - are used to define the structure of an object. 
 - defines a new Type!
@@ -26,7 +26,7 @@ const printVehicle = (vehicle: Vehicle): void => { }
 - general Strategy for re-usable code in TS: 
   -> create functions that accept arguments that are typed with interfaces!
   -> objects classes can decide to 'implement' a given interface to work with a function 
-  (think as interface work as a gatekeeper)
+  (think as interface work as a gatekeeper!)
 
 
 Type:
