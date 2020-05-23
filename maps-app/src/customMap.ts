@@ -1,8 +1,17 @@
 // customized Map: we want to limit the access and the functionality of full googleMap access 
 // to only certain methods - to prevent accidently break the application.
 // we are pretending: other programmers have not access to this file:
-import { User} from './User';
+import { User } from './User';
 import { Company } from './Company'
+
+// interface for all Markers on a map: Instruction to every other Class
+// on how they can be an argument to 'addMarker'
+interface Mappabe {
+  location: {
+    lat: number;
+    lng: number;
+  };
+}
 
 
 export class CustomMap {
@@ -18,25 +27,15 @@ export class CustomMap {
     });
   }
 
-  // bad immplementation
-  addUserMarker(user: User): void {
+  // good immplementation: mappable req interface Mappable to satisfy valid AddMarker 'syntax' 
+  addMarker(mappable: Mappabe): void {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
-        lat: user.location.lat,
-        lng: user.location.lng
+        lat: mappable.location.lat,
+        lng: mappable.location.lng
       }
     });
   }
-
-  // addCompanyMarker(company: Company): void {
-    // new google.maps.Marker({
-      // map: this.googleMap,
-      // position: {
-        // lat: company.location.lat,
-        // lng: company.location.lng
-      // }
-    // });
-  // }
 }
 

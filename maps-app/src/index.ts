@@ -15,8 +15,9 @@ const company = new Company();
 // instance from customMap with id of document. 
 const customMap = new CustomMap('map')
 
-customMap.addUserMarker(user);
-customMap.addUserMarker(company);
+customMap.addMarker(user);
+customMap.addMarker(company);
+
 // instance of map of google.Map
 // new google.maps.Map(mapDiv, {
   // zoom: 1,
