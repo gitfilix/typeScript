@@ -29,13 +29,19 @@ export class CustomMap {
 
   // good immplementation: mappable req interface Mappable to satisfy valid AddMarker 'syntax' 
   addMarker(mappable: Mappabe): void {
-    new google.maps.Marker({
+    const marker = new google.maps.Marker({
       map: this.googleMap,
       position: {
         lat: mappable.location.lat,
         lng: mappable.location.lng
       }
     });
+    marker.addListener('click', () => {
+      const infoWindow = new google.maps.InfoWindow({
+        content: 'hi There!'
+      });
+      infoWindow.open(this.googleMap, marker);
+    })
   }
 }
 
