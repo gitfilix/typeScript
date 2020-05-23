@@ -118,3 +118,8 @@ Type definition files:
 install like that
 npm install @types/faker
 
+
+keyword implements:
+// make sure this interface is used and gets implement correctly
+export class Company implements Mappable {}
+

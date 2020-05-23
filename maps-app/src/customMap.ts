@@ -6,12 +6,13 @@ import { Company } from './Company'
 
 // interface for all Markers on a map: Instruction to every other Class
 // on how they can be an argument to 'addMarker'
-interface Mappabe {
+export interface Mappable {
   location: {
     lat: number;
     lng: number;
   };
   markerContent(): string;
+  color: string;
 }
 
 
@@ -29,7 +30,7 @@ export class CustomMap {
   }
 
   // good immplementation: mappable req interface Mappable to satisfy valid AddMarker 'syntax' 
-  addMarker(mappable: Mappabe): void {
+  addMarker(mappable: Mappable): void {
     const marker = new google.maps.Marker({
       map: this.googleMap,
       position: {

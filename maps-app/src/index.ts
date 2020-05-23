@@ -5,15 +5,12 @@ import { CustomMap } from './customMap'
 
 const user = new User();
 const company = new Company();
-// 
+// instance from customMap with id of document. 
+const customMap = new CustomMap('map')
+
 // console.log(company);
 // console.log(user);
 // const mapDiv = document.getElementById('map') as HTMLElement;
-
-
-
-// instance from customMap with id of document. 
-const customMap = new CustomMap('map')
 
 customMap.addMarker(user);
 customMap.addMarker(company);
