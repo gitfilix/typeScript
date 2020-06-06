@@ -11,11 +11,16 @@ var Sorter = /** @class */ (function () {
         for (var i = 0; i < length; i++) {
             for (var j = 0; j < length - i - 1; j++) {
                 // if leftHand-side of two elements is bigger -> swap it to the right
-                if (this.collection[j] > this.collection[j + 1]) {
-                    var leftHand = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = leftHand;
+                // only works for the case if collection is array of numbers.
+                // 
+                if (this.collection instanceof Array) {
+                    if (this.collection[j] > this.collection[j + 1]) {
+                        var leftHand = this.collection[j];
+                        this.collection[j] = this.collection[j + 1];
+                        this.collection[j + 1] = leftHand;
+                    }
                 }
+                // works only if collection is a string
             }
         }
     };

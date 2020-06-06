@@ -85,7 +85,7 @@ describe what parameter-types go in and how the return value is expected:
 Type ANY: TS has no idea what type it actually is. 
 
 1.
-// flexible Types: this array can contain date-types and /or strings:
+// flexible Types: this array can contain date-types and /or strings: ("|" is a union type operator !)
 
 const importantDates: (Date | string)[] = []
 importantDates.push('2030-10-4') // valid 
@@ -128,4 +128,21 @@ tsc --init
 
 // start a whatcher
 tsc -w 
+
+
+  strings excourse asside
+  -----------------------
+
+  "X".charCodeAt(0) -> retruns ascii code of that caracter. (88)
+
+
+Type Guard: 
+-----------
+
+this.collection instanceof Array
+
+
+
+
+
 
