@@ -2,7 +2,6 @@ OS junk files
 [Tt]humbs.db
 *.DS_Store
 node_modules/
-build/*
 *.zip
 .DS_Store
 .idea
