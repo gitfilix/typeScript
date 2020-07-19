@@ -139,6 +139,11 @@ tsc -w
 Type Guard: 
 -----------
 
+// TypeGuard: 'instanceof Array' means: 
+// in this if statement: treat collection as an Array with all properties and methods
+// (so overwrite union operator exclusion 'collection: number[] | string') which allows 
+// ONLY the COMMON methods and properties of string and array. (which is a lot of exclusion) 
+
 this.collection instanceof Array
 
 
