@@ -33,7 +33,7 @@ class Sorter {
   }
 }
 
-const myListToSort = new Sorter([10, 3, -5, 0, 7, 33, -7]);
+const myListToSort = new Sorter([10, -3, -5, 0, 7, 33, -7]);
 myListToSort.sort()
 
 console.log(myListToSort.collection);
