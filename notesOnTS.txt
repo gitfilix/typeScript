@@ -10,6 +10,9 @@ tsc index.ts
 
 --> convert to index.js
 
+# creates a tsconfig file
+tsc --init
+
 
 def: Interface: 
 ----------------
@@ -113,8 +116,8 @@ void: function returns nothing!
 
 
 
-Type definition files:
-
+Type definition files (@types):
+------------------------------------
   - between TS Code and 3rd party libraries. 
   - kind of an adapter -/ layer
   - often available on npm as special / aditional package ("@types/faker": "^4.1.11",)
@@ -122,6 +125,8 @@ Type definition files:
 install like that
 npm install @types/faker
 
+for node-js type-definition files use:
+npm install @types/node
 
 keyword implements:
 // make sure this interface is used and gets implement correctly
@@ -151,6 +156,18 @@ Type Guard:
 this.collection instanceof Array
 
 
+
+Enums
+-----
+-> basicly objects with different syntax
+-> will be compiled to objects
+-> signal to other engineers related values 
+-> follows .-syntax
+-> use when we have a small fixed set of values that are closely related
+
+enum MatchResult {
+  HomeWin = 'H'
+}
 
 
 
