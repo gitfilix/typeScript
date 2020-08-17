@@ -13,7 +13,7 @@ tsc index.ts
 
 def: Interface: 
 ----------------
-  creates a new type, describing the property names anf value types of an object
+  creates a new type, describing the property names and value types of an object
 
 - are used to define the structure of an object. 
 - defines a new Type!
@@ -22,6 +22,10 @@ def: Interface:
 
 // to call printVehicle you must pass an object that meets the specification defined in a Interface (Vehicle)
 const printVehicle = (vehicle: Vehicle): void => { }
+
+- in an Interface we can define functions expressions and their return value as well. 
+- we are not limited to primitive values in an Interface.
+
 
 - general Strategy for re-usable code in TS: 
   -> create functions that accept arguments that are typed with interfaces!
@@ -63,7 +67,7 @@ def:  Type ANNOTATION:
 def: Type INFERENCE:
 Typescript tries to (automaticly) figure out what [THE HELL] type of value a variable refers to. 
 
-  -> if decalaration and initaialisazion are on the same line, TS will figure out the type for us.
+  -> if decalaration and initialisazion are on the same line, TS will figure out the type for us.
 
   -> we use type INFERENCE ? Always!  (do not declare the obvious)
 
@@ -99,7 +103,7 @@ addMarker(mappable: User | Company): void {}
 
 def: Tuples: 
   Array-like structur where each element represent some property of a record
-  -> order wihtin is crucial!
+  -> order within is crucial!
   example:
   [ brown, true, 42 ]
 
