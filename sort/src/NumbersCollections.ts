@@ -13,7 +13,7 @@ export class NumbersCollection {
       return this.data[leftIndex] > this.data[rightIndex];
     }
 
-    // spap logic
+    // swap logic
     swap(leftIndex: number, rightIndex: number): void {
       const leftHand = this.data[leftIndex];
       this.data[leftIndex] = this.data[rightIndex];

@@ -1,10 +1,16 @@
 // helper class 
-import { NumbersCollection} from './NumbersCollections'
+// import { NumbersCollection} from './NumbersCollections'
+
+interface Sortable {
+  length: Number;
+  compare(leftIndex: number, rightIndex: number): boolean;
+  swap(leftIndex: number, rightIndex: number): void;
+}
 
 
 export class Sorter {
     // TS collection accept
-    constructor(public collection: NumbersCollection) {}
+    constructor(public collection: Sortable) {}
     sort(): void {
     // lenght of the array
       const { length } = this.collection;
