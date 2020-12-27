@@ -100,7 +100,7 @@ importantDates.push(new Date('2043-3-10')) // valid
 importantDates.push(200) // InValid !
 
 2.
-// addMarker accepts User or Company 
+// addMarker accepts User or Company  :void = return nothing
 addMarker(mappable: User | Company): void {}
 
 
@@ -169,6 +169,9 @@ enum MatchResult {
   HomeWin = 'H'
 }
 
+
+// js native object update method: update all current values
+Object.assign(this.data, update)
 
 
 

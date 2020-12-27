@@ -1,0 +1,2 @@
+// start parcel server with 
+parcel index.html
