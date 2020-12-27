@@ -4,8 +4,8 @@ interface UserProps {
   age?: number; 
 }
 
-// Type Alias: function has no input and no cb
-type Callbackfn = () => {}
+// Type Alias: function has no input and no cb return value
+type Callbackfn = () => void;
 
 export class User {
   // events annotation: 
@@ -28,7 +28,10 @@ export class User {
 
   //event handler: event and callback-fn
   on(eventName: string, callback: Callbackfn) {
-
+    // if events are empyt {} at init state (undefined) -> handlers are empty array 
+    const handlers = this.events[eventName] || []
+    handlers.push(callback)
+    this.events[eventName] = handlers
   }
 
 }
