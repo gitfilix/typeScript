@@ -4,8 +4,8 @@ interface UserProps {
   age?: number; 
 }
 
-// Type Alias: function has no input and no cb return value
-type Callbackfn = () => void;
+// Type Alias: function has no input and no cb return empty object
+type Callbackfn = () => {};
 
 export class User {
   // events annotation: 
@@ -32,6 +32,18 @@ export class User {
     const handlers = this.events[eventName] || []
     handlers.push(callback)
     this.events[eventName] = handlers
+  }
+
+  trigger(eventName: string): void {
+    const handlers = this.events[eventName]
+
+    if (!handlers || handlers.length === 0) {
+      return
+    }
+
+    handlers.forEach(callback => {
+      callback()
+    })
   }
 
 }
