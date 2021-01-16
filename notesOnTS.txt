@@ -68,7 +68,7 @@ def:  Type ANNOTATION:
   Code we add to tell Typescript what type of value a variable will refer to
 
 def: Type INFERENCE:
-Typescript tries to (automaticly) figure out what [THE HELL] type of value a variable refers to. 
+Typescript tries to (automaticly) figure out what [THE HELL] type of value a variable refers to. (guessing is up to TS)
 
   -> if decalaration and initialisazion are on the same line, TS will figure out the type for us.
 
